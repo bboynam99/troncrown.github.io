@@ -1,0 +1,399 @@
+ 
+<!DOCTYPE html> 
+<html lang="en"> 
+    <!-- Mirrored from tronland.site/en/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Feb 2020 01:23:47 GMT -->     
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <meta name="description" content="Create your plantation, develop it and get cryptocurrency Tron every day!"> 
+        <meta name="keywords" content="tron, land, tron land, smart, contract, investment, throne, tron, coin, trx, game, strategy, earnings on the Internet, passive income, investors, investment fund, income, finance, freebies, simple earnings, how to make money on the Internet, rates, bet, bet, smart contract, cryptocurrency, bounty, bitcoin, bitcoin, money, easy money, mmm, mlm, dice2win, eosbet, mmm3eth, easy invest, iz invest, 333eth, gorgona, investment fund, financial pyramid"> 
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="../js/slick/slick.css"> 
+        <link rel="stylesheet" href="../js/slick/slick-theme.css"> 
+        <link rel="stylesheet" href="../css/style.css"> 
+        <link rel="stylesheet" href="../css/media.css"> 
+        <link rel="shortcut icon" href="../img/favico.ico" type="image/x-icon"> 
+        <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+        <title>TRONLAND&#169; - Economic strategy based on Tron Network</title>         
+    </head>     
+    <body> 
+        <button onclick="$('#faq').show()">
+            faq
+</button>
+        <div class="modalContent" id="faq"> 
+            <div class="content_faq text-center"> 
+                <div class="close_btn" onclick="$('#faq').hide()">
+                    <img src="../img/close.png" alt="">
+                </div>                 
+                <h3>GET STARTED </h3> 
+                <span>Referral code needed to play this game</span> 
+                <br>
+                <br>
+                <input type="number" id="specialId" placeholder="Enter Sponsor Code" style="width:100%;padding:10px;border:1px solid;font-family:monospace;text-align:center" />
+                <input type="text" id="_bool" placeholder="Enter Sponsor Code" value="0" style="width:100%;padding:10px;border:1px solid;font-family:monospace;text-align:center" />
+                <br>
+                <br>
+                <span style="color:#0ba0e3;font-family:monospace;cursor:pointer" id="getid">I DON'T HAVE A CODE</span> 
+                <div class="mt-2">
+                    <a class="h-100 btn red font-weight-bold" style="width: 200px;color:white;background:green" onclick="joinow()">Play Now</a>
+                </div>
+            </div>             
+        </div>         
+        <div class="block_info" id="bl2"> 
+            <div class="container"> 
+                <h3 class="title_main"></h3> 
+                <p class="subtitle_text">&nbsp;</p> 
+                <div class="row">
+                    <div class="col">
+                        <h4 class="title_main font-weight-bold">
+                              30% Everyday profits </h4> 
+                        <h4 class="title_main font-weight-bold">
+    10% Referral Income </h4>
+                        <br />
+                        <ul class="text_block text-center list_info">
+                            <li>
+                                <i class="ion-android-checkmark-circle"></i>3% Project fee.
+                            </li>
+                            <li>
+                                <i class="ion-android-checkmark-circle"></i> Instant withdraw
+                            </li>
+                            <li>
+                                <i class="ion-android-checkmark-circle"></i> Fully verified smart contract
+                            </li>
+                            <li>
+                                <i class="ion-android-checkmark-circle"></i>Autocatic Sponsor distribution based on FCFS
+                            </li>
+                            <li>
+                                <i class="ion-android-checkmark-circle"></i>No Multilevel,Direct Forever 10% reaward system
+                            </li>
+                        </ul>
+                        <br>
+                        <div align="center">
+                            <label class="title_main" style="background:white;padding:10px;border-radius:20px;font-size:17px">VERIFIED CONTRACT</label>
+                        </div>
+                    </div>
+                    <div class="col" style="background:
+
+#fdf9f0;padding:10px">
+                        <p class="subtitle_text">&nbsp;</p> 
+                        <h5 class="title_main font-weight-bold">
+                     Invest </h5> 
+                        <p class="text_block text-center list_info"> 
+Invest and receive 25% per day forever   </p>
+                        <div align="center" class=" font-weight-bold">
+                            <div class="title_main" style="font-size: 18px; font-weight: 600;">Invested :</div>                             
+                            <span id="_Invested">?</span> 
+                            <span><img src="../img/trx.svg" width="20px"></span>
+                            <br>
+                        </div>
+                        <div class="text_block text-center list_info inputdata">
+                            <span><img src="../img/trx.svg" width="30px"></span>
+                            <input type="number" id="buy" /> 
+                            <span>MAX</span>
+                        </div>
+                        <div class="h-1 mt-2">
+                            <a class="h-100 btn red text_block" style="width: 100%;background:#0ba0e3 ;color:white;font-weight:bold;margin:10px;padding:10px" onclick=" buy()">INVEST NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>             
+        </div>         
+        <br /> 
+        <br />
+        <div class="text_block text-center list_info">
+            <div class="about-content aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+                <h2>Contract Stats</h2>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="mt-2">
+                            <div style="font-size: 18px; font-weight: 600;" class="subtitle_text">Total Invested</div>
+                            <div class="d-flex  justify-content-center" id=""> 
+                                <span id="_amt">?</span> 
+                                <img src="../img/trx.svg" width="20px" height="20px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="mt-2">
+                            <div style="font-size: 18px; font-weight: 600;" class="subtitle_text">Total Rewards</div>
+                            <div class="d-flex  justify-content-center" id=""> 
+                                <span id="rewards">?</span> 
+                                <img src="../img/trx.svg" width="20px" height="20px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4">
+                        <div class="mt-2">
+                            <div class="subtitle_text" style="font-size: 18px; font-weight: 600;">Total Players</div>
+                            <div class="d-flex  justify-content-center" id=""> 
+                                <span id="_pl">?</span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="investRecord" id="invst">
+                            <!-------------------------------------------------->
+                            <!-------------------------------------------------->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container p-3 gradient shadow-bottom aos-init aos-animate" style="" data-aos="fade-up">
+                <div class="row text-center">
+                    <div class="col-12 col-md-6">
+                        <div class="about-content aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+                            <h2 class="title_main font-weight-bold">Dividends</h2>
+                            <div style="min-height: 195px;">
+                                <div class="subtitle_text title_main" style="font-size:15px">My address</div>
+                                <br> 
+                                <div>TAQsP...uErzf</div>
+                                <div class="mt-2"> 
+                                    <div style="font-size: 18px; font-weight: 600;">Available to withdraw</div>                                     
+                                    <div class="d-flex  justify-content-center" id=""> 
+                                        <span id="_earned">?</span> 
+                                        <img src="../img/trx.svg" width="20px" height="20px">
+                                    </div>                                     
+                                </div>
+                                <div class="mb-1">
+                                    <small class="text-danger">1-3 TRX transaction fee will be applied</small>
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <a class="h-100 btn red font-weight-bold" style="width: 200px;color:white;" onclick="withdraw()">Withdraw</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="about-content aos-init aos-animate" data-aos="fade-left" data-aos-delay="100"> 
+                            <h2 class="title_main  font-weight-bold">Referral</h2> 
+                            <div class="text_block text-center list_info" style="min-height: 195px;">
+                                <div class="title_main subtitle_text  " style="font-size:15px">Rewards:</div>
+                                <ul>
+                                    <li>
+                                        <i class="ion-android-checkmark-circle"></i> You get 10% from EVERY referral's investment
+                                    </li>
+                                    <li>
+                                        <i class="ion-android-checkmark-circle"></i> Cashback up to 10% from your investment valid with one active refferal
+                                    </li>
+                                </ul>
+                                <div class="mt-2">
+                                    <div style="font-size: 18px; font-weight: 600;">My total referral rewards</div>
+                                    <div class="d-flex  justify-content-center"> 
+                                        <span id="totalRefBonus">?</span> 
+                                        <img src="../img/trx.svg" width="20px" height="20px">
+                                    </div>
+                                </div>
+                            </div>                             
+
+                            <input type="text" value="" id="_ref" style="background:none;border:none;width:100%;text-align:center;outline:none" />
+                            <div class="h-100 mt-2">
+                                <a class="h-100 btn red" style="width: 230px;background:green;color:white;font-weight:bold" onclick="copyRef()">Copy referral link</a>
+                            </div>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12 text-center">
+                        <div class="about-content aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+                            <h2>Investments</h2>
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="mt-2">
+                                        <div style="font-size: 18px; font-weight: 600;" class="subtitle_text">My total investments</div>
+                                        <div class="d-flex  justify-content-center"> 
+                                            <span id="_Invested1">?</span> 
+                                            <img src="../img/trx.svg" width="20px" height="20px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="mt-2">
+                                        <div style="font-size: 18px; font-weight: 600;" class="subtitle_text">My total withdrawal</div>
+                                        <div class="d-flex  justify-content-center"> 
+                                            <span id="_Withdrawn">?</span> 
+                                            <img src="../img/trx.svg" width="20px" height="20px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <div class="mt-2">
+                                        <div class="subtitle_text" style="font-size: 18px; font-weight: 600;">Cashback received</div>
+                                        <div class="d-flex  justify-content-center" id=" "> 
+                                            <span id="CashBack">?</span> 
+                                            <img src="../img/trx.svg" width="20px" height="20px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <div class="investRecord" id="">
+                                        <!-------------------------------------------------->
+                                        <!-------------------------------------------------->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages_block"> 
+            <div class="container advantages_image"> 
+                <h3 class="title_main">&nbsp;TRONCROWN&nbsp;&#169; KEY BENEFITS</h3> 
+                <p class="subtitle_text"> 
+                    Actual earnings and fast profit withdrawal  </p> 
+                <div class="row align-items-center"> 
+                    <div class="col-12 col-lg-3 text-center"> 
+                        <img src="../img/adv_image_1.png" class="mw-100 mb_bt" alt=""> 
+                    </div>                     
+                    <div class="col-12 col-lg-6"> 
+                        <p class="text_block text-center list_info"> 
+                        • Safety and reliability of TRON network <br> 
+                        • Open source code of smart contract  <br> 
+                        • Live statistics  <br> 
+                        • Automatic secondly coin accrual  <br> 
+                        • Short payback period and stability <br>
+    • Instant Referral Payment. <br>
+    • Cahs Back after one active referral.</p> 
+                    </div>                     
+                    <div class="col-12 col-lg-3 text-center"> 
+                        <img src="../img/adv_image_2.png" class="mw-100 mobail_hidden" alt=""> 
+                    </div>                     
+                </div>                 
+                <div class="text-center element_new_game"> 
+                    <a href="game.html" class="newgame_btn"> 
+                        PLAY </a> 
+                </div>                 
+            </div>             
+        </div>         
+        <div class="block_info_bottom" id="bl1"> 
+            <div class="container"> 
+                <h3 class="title_main">Frequently Asked Question</h3> 
+                <p class="subtitle_text"> 
+                   You have questions , you can get answers here  </p> 
+                <div class=" "> 
+                    <div class="text_block text-center list_info col-12 col-lg-8" style="margin:auto"> 
+                        <p class="text_info_2"> <div class="accordion">
+                                <div class="accordion-item">
+                                    <a>Why is it safe project to invest in?</a>
+                                    <div class="content">
+                                        <p>Our Smart Contract is uploaded in TRON blockchain and all the dApp is powered by it.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <a>When the dividends are distributed?</a>
+                                    <div class="content">
+                                        <p>Your available balance is updating every second. You can get your dividends any time you want!</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <a>Where can I find source codes?</a>
+                                    <div class="content">
+                                        <p>After the security audit source codes will be uploaded to TronScan.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <a>What is the minimum to invest?</a>
+                                    <div class="content">
+                                        <p>At the moment it requires at least 30 TRX to invest. Less minimum amount is not appropriate due to 2.5 TRX transaction fee.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <a>I invested one amount but another was subtracted, what happened?</a>
+                                    <div class="content">
+                                        <p>Every invest transaction costs around 2.5 TRX, keep it in mind. Withdraw transactions are also cost something.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <a>Is it a long-term project?</a>
+                                    <div class="content">
+                                        <p>Our profits are hard coded and equals to 3% of total investments, the longer we run the more we earn together with you. That is a win-win situation!</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <a>I have a different question, what should I do?</a>
+                                    <div class="content">
+                                        <p>Every invest transaction costs around 2.5 TRX, keep it in mind. Withdraw transactions are also cost something.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <a>What is cashback?</a>
+                                    <div class="content">
+                                        <p>Cashback is an instant investment return which can be up to 3%.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <a>What is the minimum to withdraw?</a>
+                                    <div class="content">
+                                        <p>You can withdraw any amount you have available. Note, that there is a withdrawal transaction fee (TRON blockchain requirment) which is more than 1 TRX.</p>
+                                    </div>
+                                </div>
+                            </div> </p> 
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>         
+        <footer class="footer"> 
+            <div class="container"> 
+                <div class="footer_content"> 
+                    <p class="copyright"> <i class="mr-2"><img src="../img/icon/copyright.png" alt=""></i> You will need web extension for the game <a href="https://chrome.google.com/webstore/detail/tronlink/ibnejdfjmmkpcnlpebklmnkoeoihofec" target="_blank">TronLink</a> or <a href="https://chrome.google.com/webstore/detail/tronpay/gjdneabihbmcpobmfhcnljaojmgoihfk" target="_blank">TronPay</a> </p> 
+                    <div class="social_block"> 
+                        <span>Contacts</span> 
+                        <a href="https://t.me/tronland_chat_en" class="item_social" target="_blank">
+                            <img src="../img/icon/s1.png" alt="">
+                        </a>                         
+                        <a href="https://discord.gg/8NR5qRp" class="item_social" target="_blank"> </a> 
+                        <a href="https://bitcointalk.org/index.php?topic=5123797.msg50277383" class="item_social" target="_blank"> </a> 
+                    </div>                     
+                </div>                 
+            </div>             
+        </footer>         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>         
+        <script src="../js/slick/slick.min.js"></script>         
+        <script src="../js/common.js"></script>         
+        <script src="tron.js"></script>         
+        <script>
+            $(document).ready(function() {
+  $('.accordion a').click(function(){
+    $(this).toggleClass('active');
+    $(this).next('.content').slideToggle(400);
+   });
+});
+        $('.slide_lant').slick({
+            dots: false,
+            infinite: true,
+            arrows: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>         
+    </body>     
+    <!-- Mirrored from tronland.site/en/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Feb 2020 01:29:34 GMT -->     
+</html>
